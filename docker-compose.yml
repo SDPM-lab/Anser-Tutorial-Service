@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+    app:
+        image: webdevops/php-nginx-dev:8.1
+        platform: linux/x86_64
+        networks:
+            - anser_project_network
+        ports:
+            - 8083:80
+        working_dir: /app
+        environment:
+            - WEB_DOCUMENT_ROOT=/app
+            - PHP_DISPLAY_ERRORS=1
+        volumes:
+            - './:/app'
+networks:
+    anser_project_network:
+        external: true

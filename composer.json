@@ -1,0 +1,12 @@
+{
+    "require": {
+        "sdpmlab/anser": "^0.1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Filters\\": "Filters/",
+            "Orchestrators\\": "Orchestrators/",
+            "Services\\": "Services/"
+        }
+    }
+}
