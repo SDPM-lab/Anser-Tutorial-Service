@@ -5,6 +5,7 @@ use SDPMlab\Anser\Service\SimpleService;
 use SDPMlab\Anser\Service\ActionInterface;
 use Filters\FailHandlerFilter;
 use Filters\JsonDoneHandlerFilter;
+use Services\Models\ModifyProduct;
 
 class ProductionService extends SimpleService
 {
@@ -94,34 +95,15 @@ class ProductionService extends SimpleService
     /**
      * 更新商品資訊
      *
-     * @param integer $productId
-     * @param string|null $name
-     * @param string|null $description
-     * @param integer|null $price
+     * @param ModifyProduct $modifyProduct
      * @return ActionInterface
      */
-    public function updateProductAction(
-        int $productId,
-        ?string $name = null,
-        ?string $description = null,
-        ?int $price = null
-    ): ActionInterface {
-        $jsonBody = [];
-        if (!is_null($name)) {
-            $jsonBody["name"] = $name;
-        }
-        if (!is_null($description)) {
-            $jsonBody["description"] = $description;
-        }
-        if (!is_null($price)) {
-            $jsonBody["price"] = $price;
-        }
-
+    public function updateProductAction(ModifyProduct $modifyProduct): ActionInterface {
         return $this->getAction(
             method: "PUT",
-            path: "/api/v1/products/{$productId}"
+            path: "/api/v1/products/{$modifyProduct->p_key}"
         )->setOptions([
-            "json" => $jsonBody
+            "json" => $modifyProduct->toArray()
         ]);
     }
 
