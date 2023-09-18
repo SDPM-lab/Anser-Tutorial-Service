@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4f9aab9b209049f894d9e076b6e179a4",
+    "content-hash": "e1f5f105f0cc91945881e6be9f8527fb",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -835,16 +835,16 @@
         },
         {
             "name": "sdpmlab/anser",
-            "version": "v0.1.6",
+            "version": "v0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SDPM-lab/Anser.git",
-                "reference": "9983bc66b8563c0f5872928a77e549fb6982dc88"
+                "reference": "8bea6a6ce50b885f2a2fd30432f1dc7b025cde62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SDPM-lab/Anser/zipball/9983bc66b8563c0f5872928a77e549fb6982dc88",
-                "reference": "9983bc66b8563c0f5872928a77e549fb6982dc88",
+                "url": "https://api.github.com/repos/SDPM-lab/Anser/zipball/8bea6a6ce50b885f2a2fd30432f1dc7b025cde62",
+                "reference": "8bea6a6ce50b885f2a2fd30432f1dc7b025cde62",
                 "shasum": ""
             },
             "require": {
@@ -882,22 +882,22 @@
             ],
             "support": {
                 "issues": "https://github.com/SDPM-lab/Anser/issues",
-                "source": "https://github.com/SDPM-lab/Anser/tree/v0.1.6"
+                "source": "https://github.com/SDPM-lab/Anser/tree/v0.2.0"
             },
-            "time": "2023-09-15T18:01:40+00:00"
+            "time": "2023-09-17T15:43:20+00:00"
         },
         {
             "name": "sdpmlab/anser-action",
-            "version": "v0.3.9",
+            "version": "v0.3.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SDPM-lab/Anser-Action.git",
-                "reference": "69708de39440842171329ac7f6d5c654e5ab073c"
+                "reference": "8ceadf0b5ffae1742b76f59e74edff871b66680a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SDPM-lab/Anser-Action/zipball/69708de39440842171329ac7f6d5c654e5ab073c",
-                "reference": "69708de39440842171329ac7f6d5c654e5ab073c",
+                "url": "https://api.github.com/repos/SDPM-lab/Anser-Action/zipball/8ceadf0b5ffae1742b76f59e74edff871b66680a",
+                "reference": "8ceadf0b5ffae1742b76f59e74edff871b66680a",
                 "shasum": ""
             },
             "require": {
@@ -933,9 +933,9 @@
             ],
             "support": {
                 "issues": "https://github.com/SDPM-lab/Anser-Action/issues",
-                "source": "https://github.com/SDPM-lab/Anser-Action/tree/v0.3.9"
+                "source": "https://github.com/SDPM-lab/Anser-Action/tree/v0.3.10"
             },
-            "time": "2023-09-15T13:18:28+00:00"
+            "time": "2023-09-17T15:11:15+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",

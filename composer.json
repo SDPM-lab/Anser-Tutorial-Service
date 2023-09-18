@@ -1,6 +1,6 @@
 {
     "require": {
-        "sdpmlab/anser": "^0.1.6"
+        "sdpmlab/anser": "^0.2.0"
     },
     "autoload": {
         "psr-4": {

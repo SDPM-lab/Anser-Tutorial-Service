@@ -30,11 +30,46 @@ class UserLoginOrchestrator extends Orchestrator
 
     protected function defineResult(): array
     {        
+        $loginAction = $this->getStepAction('login');
+        $infoAction = $this->getStepAction('info');
+        $walletAction = $this->getStepAction('wallet');
+        
         $data = [
-            "token" => $this->getStepAction('login')->getMeaningData()['token'],
-            "userData" => $this->getStepAction('info')->getMeaningData()['data'],
-            "walletInfo" => $this->getStepAction('wallet')->getMeaningData()['data']
+            "success" => true,
+            "message" => "協作器執行成功"
         ];
+        $data['token'] =  $loginAction->getMeaningData()['token'];
+        $data['userData'] = $infoAction->getMeaningData()['data'];
+        $data['walletInfo'] = $walletAction->getMeaningData()['data'];
+        return $data;
+    }
+
+    protected function defineFailResult(): array
+    {
+        $loginAction = $this->getStepAction('login');
+        $infoAction = $this->getStepAction('info');
+        $walletAction = $this->getStepAction('wallet');
+
+        $data = [
+            "success" => false,
+            "message" => "協作器執行失敗"
+        ];
+
+        $data['token'] = $loginAction->isSuccess() ? $loginAction->getMeaningData()['token'] : $loginAction->getMeaningData();
+        if($loginAction->isSuccess() == false){
+            $data['userData'] = "資料無法取得";
+            $data['walletInfo'] = "資料無法取得";
+            return $data;
+        }
+
+        if($infoAction != null){
+            $data['userData'] = $infoAction->isSuccess() ? $infoAction->getMeaningData()['data'] : "部分資料無法取得";
+        }
+
+        if($walletAction != null){
+            $data['walletInfo'] = $walletAction->isSuccess() ? $walletAction->getMeaningData()['data'] : "部分資料無法取得";
+        }
+
         return $data;
     }
 
