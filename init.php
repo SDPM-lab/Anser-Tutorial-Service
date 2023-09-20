@@ -24,3 +24,6 @@ ServiceList::addLocalService(
     port: 8080,
     isHttps: false
 );
+
+//定義常數 Log 位置
+define("LOG_PATH", __DIR__ . DIRECTORY_SEPARATOR ."Logs" . DIRECTORY_SEPARATOR);
