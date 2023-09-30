@@ -835,16 +835,16 @@
         },
         {
             "name": "sdpmlab/anser",
-            "version": "v0.2.2",
+            "version": "v0.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SDPM-lab/Anser.git",
-                "reference": "60928d44d9f18ee1d3d95620d84407c4a78d89ee"
+                "reference": "9a9781c9133b7077e5302921fc4559185bfbfe3b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SDPM-lab/Anser/zipball/60928d44d9f18ee1d3d95620d84407c4a78d89ee",
-                "reference": "60928d44d9f18ee1d3d95620d84407c4a78d89ee",
+                "url": "https://api.github.com/repos/SDPM-lab/Anser/zipball/9a9781c9133b7077e5302921fc4559185bfbfe3b",
+                "reference": "9a9781c9133b7077e5302921fc4559185bfbfe3b",
                 "shasum": ""
             },
             "require": {
@@ -882,9 +882,9 @@
             ],
             "support": {
                 "issues": "https://github.com/SDPM-lab/Anser/issues",
-                "source": "https://github.com/SDPM-lab/Anser/tree/v0.2.2"
+                "source": "https://github.com/SDPM-lab/Anser/tree/v0.2.4"
             },
-            "time": "2023-09-27T14:19:46+00:00"
+            "time": "2023-09-30T08:25:54+00:00"
         },
         {
             "name": "sdpmlab/anser-action",

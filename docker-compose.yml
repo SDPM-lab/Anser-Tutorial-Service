@@ -14,6 +14,12 @@ services:
             - PHP_DISPLAY_ERRORS=1
         volumes:
             - './:/app'
+    anser_redis:
+        image: redis:latest
+        networks:
+            - anser_project_network
+        ports:
+            - 6379:6379
 networks:
     anser_project_network:
         external: true
