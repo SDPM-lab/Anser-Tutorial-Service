@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a1676778644badc1af0f976d4f43c7e8",
+    "content-hash": "8bceaf56346a8e848be54d0305f3efd6",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -835,16 +835,16 @@
         },
         {
             "name": "sdpmlab/anser",
-            "version": "v0.2.4",
+            "version": "v0.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SDPM-lab/Anser.git",
-                "reference": "9a9781c9133b7077e5302921fc4559185bfbfe3b"
+                "reference": "d30a0e7417b74a30d68fbbc6e8cc1014d9329a9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SDPM-lab/Anser/zipball/9a9781c9133b7077e5302921fc4559185bfbfe3b",
-                "reference": "9a9781c9133b7077e5302921fc4559185bfbfe3b",
+                "url": "https://api.github.com/repos/SDPM-lab/Anser/zipball/d30a0e7417b74a30d68fbbc6e8cc1014d9329a9a",
+                "reference": "d30a0e7417b74a30d68fbbc6e8cc1014d9329a9a",
                 "shasum": ""
             },
             "require": {
@@ -882,9 +882,9 @@
             ],
             "support": {
                 "issues": "https://github.com/SDPM-lab/Anser/issues",
-                "source": "https://github.com/SDPM-lab/Anser/tree/v0.2.4"
+                "source": "https://github.com/SDPM-lab/Anser/tree/v0.2.6"
             },
-            "time": "2023-09-30T08:25:54+00:00"
+            "time": "2023-10-01T11:09:45+00:00"
         },
         {
             "name": "sdpmlab/anser-action",
